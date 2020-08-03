@@ -1,1 +1,1 @@
-# WaffleChattingApp
+# WaffleClient
