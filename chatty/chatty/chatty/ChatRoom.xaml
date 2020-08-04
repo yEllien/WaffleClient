@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="chatty.ChatRoom">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <ScrollView x:Name="SB" HeightRequest="480">
+            <StackLayout x:Name="SLV"></StackLayout>
+        </ScrollView>
+        <Grid VerticalOptions="EndAndExpand">
+
+            <Entry x:Name="Input"
+                Placeholder="Type your text here                               "
+                TextColor="LightSlateGray"
+                HorizontalOptions="StartAndExpand"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+            <Button x:Name="Post"
+                    Text="Send"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    BorderColor="White"
+                    BackgroundColor="CadetBlue"
+                    TextColor="White"
+                    HeightRequest="50" 
+                    WidthRequest="90"
+                    Clicked="HandleButtonClick"/>
+
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
