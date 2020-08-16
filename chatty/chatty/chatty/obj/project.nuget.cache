@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XDQRncxeUAN8W1RVBqvcwZRlzr9iNnwTbDsCjlqCsFDABEVocf9dExIVQ7f1hCIUazvk/J05fzQv44kQ9i4psQ==",
+  "dgSpecHash": "vkMny1nDs6vf2LE/tsC1OLQ8xzOiWoY5xMANOkR8vjlBh4ClhrvxgRn4ySaOcTCD7OfBnV7g8kJFUV7bai9v9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\Chat Project\\chatty\\chatty\\chatty\\chatty.csproj",
+  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elitt\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\elitt\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\elitt\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Users\\elitt\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\elitt\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
   ],
   "logs": []
 }

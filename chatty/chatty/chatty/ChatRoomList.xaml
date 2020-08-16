@@ -4,18 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="chatty.ChatRoomList">
+             x:Class="chatty.ChatRoomList"
+             BackgroundColor="#343434">
     <ContentPage.Content>
         <StackLayout x:Name ="SL">
 
             <Grid>
                 <Label Text="Your ChatRooms"
-                       TextColor="#c1dada"
+                       TextColor="#343434"
                     VerticalOptions="StartAndExpand" 
                     HorizontalOptions="FillAndExpand"
                     Padding="45,30"
                        FontSize="20"
-                       BackgroundColor="CadetBlue"
+                       BackgroundColor="#ffb940"
                        Grid.ColumnSpan="10"
                        Grid.Column="0"/>
                 

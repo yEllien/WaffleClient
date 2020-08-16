@@ -4,17 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="chatty.LoginPage">
+             x:Class="chatty.LoginPage"
+             BackgroundColor="#343434">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Login"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
-                TextColor="CadetBlue"
+                TextColor="#ffb940"
                    FontSize="24"/>
             <Entry x:Name="Username" Placeholder="Username"/>
             <Entry x:Name="Password" Placeholder="Password"/>
-            <Button x:Name="LoginButton" Text="Login" BackgroundColor="CadetBlue"
+            <Button x:Name="LoginButton" Text="Login" BackgroundColor="#ffb940"
                     Clicked="Login"/>
         </StackLayout>
     </ContentPage.Content>

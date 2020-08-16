@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="chatty.ChatRoom">
+             x:Class="chatty.ChatRoom"
+             BackgroundColor="#343434">
 
     <StackLayout>
         <!-- Place new controls here -->
@@ -26,8 +27,8 @@
                     Grid.Row="0"
                     Grid.Column="3"
                     BorderColor="White"
-                    BackgroundColor="CadetBlue"
-                    TextColor="White"
+                    BackgroundColor="#ffb940"
+                    TextColor="#343434"
                     HeightRequest="50" 
                     WidthRequest="90"
                     Clicked="HandleButtonClick"/>
