@@ -63,6 +63,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Solway-Bold.ttf" />
+    <AndroidAsset Include="Assets\Solway-ExtraBold.ttf" />
+    <AndroidAsset Include="Assets\Solway-Light.ttf" />
+    <AndroidAsset Include="Assets\Solway-Medium.ttf" />
+    <AndroidAsset Include="Assets\Solway-Regular.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

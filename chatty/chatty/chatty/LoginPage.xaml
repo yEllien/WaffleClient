@@ -12,7 +12,8 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 TextColor="#ffb940"
-                   FontSize="24"/>
+                FontSize="24"
+                FontFamily="Solway-Light.ttf#Solway Light"/>
             <Entry x:Name="Username" Placeholder="Username"/>
             <Entry x:Name="Password" Placeholder="Password"/>
             <Button x:Name="LoginButton" Text="Login" BackgroundColor="#ffb940"

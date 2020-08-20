@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resource\Solway-Bold.ttf" />
+    <None Remove="Resource\Solway-ExtraBold.ttf" />
+    <None Remove="Resource\Solway-Light.ttf" />
+    <None Remove="Resource\Solway-Medium.ttf" />
+    <None Remove="Resource\Solway-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
@@ -28,5 +36,13 @@
     <EmbeddedResource Update="LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Solway-Bold.ttf" />
+    <Resource Include="Resource\Solway-ExtraBold.ttf" />
+    <Resource Include="Resource\Solway-Light.ttf" />
+    <Resource Include="Resource\Solway-Medium.ttf" />
+    <Resource Include="Resource\Solway-Regular.ttf" />
   </ItemGroup>
 </Project>

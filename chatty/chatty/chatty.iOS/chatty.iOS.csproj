@@ -68,6 +68,11 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Solway-Bold.ttf" />
+    <BundleResource Include="Resources\Solway-ExtraBold.ttf" />
+    <BundleResource Include="Resources\Solway-Light.ttf" />
+    <BundleResource Include="Resources\Solway-Medium.ttf" />
+    <BundleResource Include="Resources\Solway-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
