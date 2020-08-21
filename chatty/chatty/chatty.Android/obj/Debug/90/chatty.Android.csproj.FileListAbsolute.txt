@@ -978,3 +978,4 @@ C:\Users\elitt\Documents\prog\programming_projects\Projects\asd\WaffleClient\cha
 C:\Users\elitt\Documents\prog\programming_projects\Projects\asd\WaffleClient\chatty\chatty\chatty.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\elitt\Documents\prog\programming_projects\Projects\asd\WaffleClient\chatty\chatty\chatty.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\elitt\Documents\prog\programming_projects\Projects\asd\WaffleClient\chatty\chatty\chatty.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\elitt\Documents\prog\programming_projects\Projects\asd\WaffleClient\chatty\chatty\chatty.Android\obj\Debug\90\res\drawable\logoicon.png

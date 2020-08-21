@@ -8,16 +8,38 @@
              BackgroundColor="#343434">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Login"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"
-                TextColor="#ffb940"
-                FontSize="24"
-                FontFamily="Solway-Light.ttf#Solway Light"/>
-            <Entry x:Name="Username" Placeholder="Username"/>
-            <Entry x:Name="Password" Placeholder="Password"/>
-            <Button x:Name="LoginButton" Text="Login" BackgroundColor="#ffb940"
-                    Clicked="Login"/>
+            <Grid>
+
+                <Image Source="logoicon.png"
+                       
+                       Grid.Row="3"
+                       Grid.RowSpan="8"/>
+                <Label 
+                    Text="Login"
+                    VerticalOptions="Fill" 
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="#ffb940"
+                    FontSize="24"
+                    FontFamily="Solway-Light.ttf#Solway Light"
+                    Grid.Row="12"
+                    Grid.RowSpan="1"/>
+                <Entry x:Name="Username"
+                       Placeholder="Username"
+                       Grid.Row="15"
+                       Grid.RowSpan="2"/>
+                <Entry x:Name="Password" 
+                       Placeholder="Password"
+                       Grid.Row="17"
+                       Grid.RowSpan="2"/>
+                <Button x:Name="LoginButton" 
+                        Text="GO" 
+                        BackgroundColor="#ffb940"
+                        Clicked="Login"
+                        Grid.Row="20"
+                        Grid.RowSpan="2"
+                        FontFamily="Solway-Light.ttf#Solway Light"/>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -24,6 +24,11 @@ namespace chatty
 
         public void Login (object sender, EventArgs args)
         {
+            //ChatRoomList chatlist = new ChatRoomList("a cert here ...");
+
+            //Application.Current.MainPage = chatlist;
+            /*
+             
             var cert = client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/Post/Login/" + Username.Text+"/"+Password.Text));
             certification = cert.ToString();
             Username.Text = "";
@@ -36,6 +41,7 @@ namespace chatty
                 error.Text = "Unable to login";
             }
 
+             */
         }
         public LoginPage()
         {

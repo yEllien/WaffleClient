@@ -17,11 +17,16 @@ namespace chatty
             NavigationPage navigation = new NavigationPage();
 
             string cert = ((LoginPage)MainPage).GetCertification();
+           
+        
+            /*
+            string cert = ((LoginPage)MainPage).GetCertification();
 
             if (cert != "Empty")
                 navigation.PushAsync(new ChatRoomList(cert));
 
             //failed
+             */
         }
 
         protected override void OnStart()
