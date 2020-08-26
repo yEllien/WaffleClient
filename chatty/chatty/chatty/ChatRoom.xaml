@@ -9,14 +9,16 @@
 
     <StackLayout>
         <Grid>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="70"/>
             </Grid.RowDefinitions>
+            
             <BoxView 
                 Color="#222222"
                 HeightRequest="70"
                 WidthRequest="340"
-                Grid.ColumnSpan="40"
+                Grid.ColumnSpan="60"
                 Grid.Row="0"
                 />
 
@@ -50,9 +52,47 @@
                     Padding="0,5,0,0"
                     HorizontalOptions="StartAndExpand"
                     VerticalOptions="Center"/>
-                
 
             </StackLayout>
+
+
+            <StackLayout 
+                Grid.Row="0" 
+                Grid.Column="31"
+                Grid.ColumnSpan ="29"
+                Orientation="Horizontal"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Padding="15">
+                
+                <ImageButton x:Name="Search"
+                    Source="search.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+                
+                <ImageButton x:Name="Call"
+                    Source="call.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+
+                <ImageButton x:Name="Info"
+                    Source="info.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+                
+                
+            </StackLayout>
+
+            <StackLayout/>
         </Grid>
         
         <ScrollView x:Name="SB">
