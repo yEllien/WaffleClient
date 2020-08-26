@@ -9,9 +9,11 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid>
+                <Grid.RowDefinitions>
+                    
+                </Grid.RowDefinitions>
 
                 <Image Source="logoicon.png"
-                       
                        Grid.Row="3"
                        Grid.RowSpan="8"/>
                 <Label 
@@ -37,7 +39,8 @@
                         Clicked="Login"
                         Grid.Row="20"
                         Grid.RowSpan="2"
-                        FontFamily="Solway-Light.ttf#Solway Light"/>
+                        FontSize="22"
+                        FontFamily="Solway-ExtraBold.ttf#Solway ExtraBold"/>
 
             </Grid>
         </StackLayout>
