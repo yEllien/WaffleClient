@@ -10,17 +10,28 @@
         <StackLayout x:Name ="SL">
 
             <Grid>
-                <Label Text="Your ChatRooms"
-                       TextColor="#343434"
-                    VerticalOptions="StartAndExpand" 
-                    HorizontalOptions="FillAndExpand"
-                    Padding="45,30"
-                       FontSize="20"
-                       BackgroundColor="#ffb940"
-                       Grid.ColumnSpan="10"
-                       Grid.Column="0"/>
-                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <BoxView 
+                Color="#222222"
+                HeightRequest="70"
+                WidthRequest="340"
+                Grid.ColumnSpan="40"
+                />
+                <Image
+                Source="letteringicontight.png"
+                Grid.Column="2"
+                Grid.ColumnSpan="14"
+                />
+                <Image
+                Source="logoicon.png"
+                Grid.Column="16"
+                Grid.ColumnSpan="4"
+                />
             </Grid>
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

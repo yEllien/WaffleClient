@@ -8,7 +8,27 @@
              BackgroundColor="#343434">
 
     <StackLayout>
-        <!-- Place new controls here -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <BoxView 
+                Color="#222222"
+                HeightRequest="70"
+                WidthRequest="340"
+                Grid.ColumnSpan="40"
+                />
+            <Image
+                Source="letteringicontight.png"
+                Grid.Column="2"
+                Grid.ColumnSpan="14"
+                />
+            <Image
+                Source="logoicon.png"
+                Grid.Column="16"
+                Grid.ColumnSpan="4"
+                />
+        </Grid>
         <ScrollView x:Name="SB">
             <StackLayout x:Name="SLV"></StackLayout>
         </ScrollView>
