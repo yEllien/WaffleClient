@@ -985,11 +985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\tryagain\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\recent\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
       "projectName": "chatty.iOS",
-      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\tryagain\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
+      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\recent\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
       "packagesPath": "C:\\Users\\elitt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\tryagain\\WaffleClient\\chatty\\chatty\\chatty.iOS\\obj\\",
+      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\recent\\WaffleClient\\chatty\\chatty\\chatty.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1010,8 +1010,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\tryagain\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj": {
-              "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\tryagain\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj"
+            "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\recent\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj": {
+              "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\recent\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj"
             }
           }
         }
