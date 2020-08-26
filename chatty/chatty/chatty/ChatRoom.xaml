@@ -9,20 +9,24 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <ScrollView x:Name="SB" HeightRequest="480">
+        <ScrollView x:Name="SB">
             <StackLayout x:Name="SLV"></StackLayout>
         </ScrollView>
         
-        <Grid VerticalOptions="End" BackgroundColor="#22222">
+        <Grid 
+            VerticalOptions="End" 
+            BackgroundColor="#22222"
+            Padding="10,0,0,5"
+            HeightRequest="60">
 
             <Entry x:Name="Input"
                 Placeholder="Type your text here                               "
-                TextColor="LightSlateGray"
-                BackgroundColor="#343434"
+                TextColor="LightGray"
+                PlaceholderColor="DimGray"
+                BackgroundColor="#22222"
                 HorizontalOptions="StartAndExpand"
-                
                 Grid.Column="0"
-                Grid.ColumnSpan="3"/>
+                Grid.ColumnSpan="4"/>
 
         <!--<Button x:Name="Post"
                     Text="Send"
@@ -34,13 +38,15 @@
                     HeightRequest="50" 
                     WidthRequest="90"
                     Clicked="HandleButtonClick"/> -->
-            <ImageButton Source="logoicon.png"
+            <ImageButton 
+                x:Name="Post"
+                Source="logoicon.png"
                          Clicked="HandleButtonClick"
                          Grid.Column="4"
                          Grid.ColumnSpan="1"
-                         
+                         Padding="0,0,0,5"
                          BackgroundColor="Transparent"
-                         Scale="0.4"/>
+                        />
 
 
         </Grid>

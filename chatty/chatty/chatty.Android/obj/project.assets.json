@@ -1937,11 +1937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
+      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
       "projectName": "chatty.Android",
-      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
+      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
       "packagesPath": "C:\\Users\\elitt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty.Android\\obj\\",
+      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1962,8 +1962,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj": {
-              "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\asd\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj"
+            "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj": {
+              "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj"
             }
           }
         }

@@ -13,7 +13,7 @@
                     
                 </Grid.RowDefinitions>
 
-                <Image Source="logoicon.png"
+                <Image Source="fulllogoicon.png"
                        Grid.Row="3"
                        Grid.RowSpan="8"/>
                 <Label 

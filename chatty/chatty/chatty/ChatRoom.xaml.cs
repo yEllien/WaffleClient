@@ -171,6 +171,7 @@ namespace chatty
         {
             InitializeComponent();
             InitialRefresh();
+            SB.HeightRequest = Application.Current.MainPage.Height-10;
             
             /* ONLY A COMMENT TO DEBUG THE UI!
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
