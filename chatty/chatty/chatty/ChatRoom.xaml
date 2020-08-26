@@ -17,17 +17,33 @@
                 HeightRequest="70"
                 WidthRequest="340"
                 Grid.ColumnSpan="40"
+                Grid.Row="0"
                 />
-            <Image
-                Source="letteringicontight.png"
-                Grid.Column="2"
-                Grid.ColumnSpan="14"
-                />
-            <Image
-                Source="logoicon.png"
-                Grid.Column="16"
-                Grid.ColumnSpan="4"
-                />
+
+            <StackLayout 
+                Grid.Row="0" 
+                Grid.Column="0"
+                Grid.ColumnSpan ="30"
+                Orientation="Horizontal"
+                HorizontalOptions="Start"
+                VerticalOptions="Center">
+                
+                <StackLayout WidthRequest="300" 
+                             Orientation="Horizontal">
+                    <Label
+                    Text="Tony"
+                    Padding="25,0,5,0"
+                    FontSize="24"
+                    TextColor="#ffb940"
+                    FontFamily="Solway-Light.ttf#Solway Light"
+                    HorizontalOptions="StartAndExpand"
+                    />
+
+                </StackLayout>
+
+                
+
+            </StackLayout>
         </Grid>
         <ScrollView x:Name="SB">
             <StackLayout x:Name="SLV"></StackLayout>
