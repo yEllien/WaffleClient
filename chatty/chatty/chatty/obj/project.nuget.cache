@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0NEbfdp7zyDrFSeLOv2wyxY9Ciea476j6zlef7LCwjOTTZvyjQdfuKSg/Aa7npQM7jXP/1Vw9X8gM/TO3t1DA==",
+  "dgSpecHash": "j7rX9Vkb5BUQgfob1dyTQ8LzEaxLGkuv9UCtn54RNEs7rofPIESgVw4OAeUXCh86/CDNGjmSM2+xqh6LXqxqBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newugh\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
+  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\newest\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elitt\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\elitt\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

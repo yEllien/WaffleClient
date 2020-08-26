@@ -56,7 +56,7 @@ namespace chatty
 
             
 
-            Grid grid = new Grid() ;
+            StackLayout line;
 
             Label time = new Label();
 
@@ -64,7 +64,9 @@ namespace chatty
 
             Label source = new Label();
 
-            if(responseString == "failed")
+            Label seperator;
+
+            if (responseString == "failed")
             {
                 message = new Label();
                 message.Text = "Failed to load messages";
@@ -88,60 +90,86 @@ namespace chatty
                     tmp.time = data[i++];
                     messages.Add(tmp);
 
-                    message = new Label();
-                    message.FontSize = 16;
                     string txt = tmp.content.Replace(comma.ToString(), ",");
+
+                    message = new Label()
+                    {
+                        FontSize = 16,
+                        Text = txt,
+                        FontFamily = "Solway-Light.ttf#Solway Light",
+                        HorizontalTextAlignment = TextAlignment.Start
+                    };
+                    /*
+                    message.FontSize = 16;
                     message.Text = txt;
-                    message.FontFamily = "Solway-Regular.ttf#Solway Regular";
+                    message.FontFamily = "Solway-Light.ttf#Solway Light";
                     message.HorizontalTextAlignment = TextAlignment.Start;
-
-                    //message.Padding = 10;
-
+                    */
+                    /*
                     source = new Label();
                     source.FontSize = 13;
                     source.Text = tmp.name;
-                    //source.FontFamily = "Solway-Regular.ttf#Solway Regular";
-                    source.TextColor = Color.LightGray;
+                    source.TextColor = Color.FromHex("#656565");
+                    */
+                    source = new Label()
+                    {
+                        FontSize = 13,
+                        Text = tmp.name,
+                        TextColor = Color.FromHex("#656565")
+                    };
 
+                    /*
                     time = new Label();
-                    time.TextColor = Color.LightGray; 
+                    time.TextColor = Color.FromHex("#656565"); 
                     time.FontSize = 11;
                     time.FontFamily = "Solway-Light.ttf#Solway Light";
                     time.Text = tmp.time;
+                    */
+                    time = new Label()
+                    {
+                        TextColor = Color.FromHex("#656565"),
+                        FontSize = 11,
+                        FontFamily = "Solway-Light.ttf#Solway Light",
+                        Text = tmp.time
+                    };
 
-                    grid = new Grid();
+                    line = new StackLayout() { Orientation = StackOrientation.Horizontal };
                     
                     if (tmp.name == "Ellie")
                     {
                         message.TextColor = Color.FromHex("#ffb940");
                         message.HorizontalOptions = LayoutOptions.End;
-                        message.Padding = new Thickness(30, 0, 10, 2);
+                        message.Padding = new Thickness(30, 0, 10, 1);
 
                         time.HorizontalTextAlignment = TextAlignment.End;
 
-                        grid.Padding = new Thickness(30, 3, 10, 0);
+                        line.Padding = new Thickness(30, 1, 10, 0);
 
-                        grid.HorizontalOptions = LayoutOptions.EndAndExpand;            
-                        grid.Children.Add(time, 0, 1,0,1);                                
-                     //   grid.Children.Add(message, 2, 2);                                 
+                        line.HorizontalOptions = LayoutOptions.EndAndExpand;
+                        line.Children.Add(time);  
                     }
                     else
                     {
                         message.TextColor = Color.LightGray;
                         message.HorizontalOptions = LayoutOptions.Start;
-                        message.Padding = new Thickness(10, 0, 30, 2);
+                        message.Padding = new Thickness(10, 0, 30, 1);
+
                         source.HorizontalTextAlignment = TextAlignment.Start;
+
                         time.HorizontalTextAlignment = TextAlignment.Start;
                         time.VerticalTextAlignment = TextAlignment.End;
 
-                        grid.Padding = new Thickness(10, 3, 30, 0);
-                        grid.Children.Add(source,0,0);                                    
-                        grid.Children.Add(time, 1,8,0,1);                                 
-                        grid.HorizontalOptions = LayoutOptions.StartAndExpand;            
+                        seperator = new Label { Text = "•", FontSize = 13, TextColor = Color.FromHex("#656565") };
+
+                        line.Padding = new Thickness(10, 1, 30, 0);
+                        line.HorizontalOptions = LayoutOptions.StartAndExpand;
+                        
+                        line.Children.Add(source);
+                        line.Children.Add(seperator);
+                        line.Children.Add(time);
                     }
 
-
-                    SLV.Children.Add(grid);                                               
+                    SLV.Children.Add(line);                                               
                     SLV.Children.Add(message);
                 }
                 if (data.Count > 1)
@@ -162,17 +190,21 @@ namespace chatty
         {
             client.PostAsync(new Uri("http://192.168.2.3/chatservice/chat/Post/" + "Ellie" + "/" + Input.Text), null);
             Input.Text = string.Empty;
+            Post.Source = "logoicon.png";
             Refresh();
         }
 
-
+        public void PressedIcon (object Sender, EventArgs args)
+        {
+            Post.Source = "pressicon.png";
+        }
            
         public ChatRoom()
         {
             InitializeComponent();
             InitialRefresh();
             SB.HeightRequest = Application.Current.MainPage.Height-10;
-            
+
             /* ONLY A COMMENT TO DEBUG THE UI!
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {

@@ -28,20 +28,12 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="4"/>
 
-        <!--<Button x:Name="Post"
-                    Text="Send"
-                    Grid.Row="1"
-                    Grid.Column="3"
-                    BorderColor="White"
-                    BackgroundColor="#ffb940"
-                    TextColor="#343434"
-                    HeightRequest="50" 
-                    WidthRequest="90"
-                    Clicked="HandleButtonClick"/> -->
+        
             <ImageButton 
                 x:Name="Post"
                 Source="logoicon.png"
                          Clicked="HandleButtonClick"
+                         Pressed="PressedIcon"
                          Grid.Column="4"
                          Grid.ColumnSpan="1"
                          Padding="0,0,0,5"
