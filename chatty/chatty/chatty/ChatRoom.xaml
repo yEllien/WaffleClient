@@ -28,23 +28,33 @@
                 HorizontalOptions="Start"
                 VerticalOptions="Center">
                 
-                <StackLayout WidthRequest="300" 
-                             Orientation="Horizontal">
-                    <Label
+                <Label x:Name="Username"
                     Text="Tony"
-                    Padding="25,0,5,0"
                     FontSize="24"
                     TextColor="#ffb940"
                     FontFamily="Solway-Light.ttf#Solway Light"
+                    Padding="25,0,5,0"
                     HorizontalOptions="StartAndExpand"
-                    />
+                    VerticalOptions="Center"/>
 
-                </StackLayout>
+                <Image x:Name="Status"
+                    Source="longinactive.png"
+                    HeightRequest="16"
+                    Margin = "5,5,0,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
 
+                <Label x:Name="LastSeen"
+                    Text="1d"
+                    TextColor="#bebebe"
+                    Padding="0,5,0,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"/>
                 
 
             </StackLayout>
         </Grid>
+        
         <ScrollView x:Name="SB">
             <StackLayout x:Name="SLV"></StackLayout>
         </ScrollView>
@@ -64,19 +74,14 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="4"/>
 
-        
-            <ImageButton 
-                x:Name="Post"
+            <ImageButton  x:Name="Post"
                 Source="logoicon.png"
-                         Clicked="HandleButtonClick"
-                         Pressed="PressedIcon"
-                         Grid.Column="4"
-                         Grid.ColumnSpan="1"
-                         Padding="0,0,0,5"
-                         BackgroundColor="Transparent"
-                        />
-
-
+                Clicked="HandleButtonClick"
+                Pressed="PressedIcon"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                Padding="0,0,0,5"
+                BackgroundColor="Transparent"/>
         </Grid>
     </StackLayout>
 
