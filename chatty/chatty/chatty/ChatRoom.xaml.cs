@@ -49,13 +49,15 @@ namespace chatty
 
         public async void Refresh() 
         {
+            if (SB.Content.Height != SB.Height) QuickScroll.IsVisible = true;
+            else QuickScroll.IsVisible = false;
+
             // i need the line below to get the proper string. for now ill make some fake messages so i can debug
             //var responseString = await client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/"+most_recent_id)); 
 
-            var responseString = "0,Ellie,Hey there,00:01:50,1,Tony,Hi,00:02:32,2,Tony,Sup,00:01:54,4,Ellie,All good ig,00:03:9,5,Tony,im gay,00:07:06,6,Ellie,i know darling,00:08:57,7,Tony,i hate u,16:20:03,8,Ellie,rly?,16:25:04,9,Tony,HIHIHIHIHIIIHH ASD this is some test text and im tryign t osee if the mesage wraps or not and if not ig ill ave t ofix it lets seeeeeeeeeeee letssee and where tho a a a a a a a a a a a a a aa a a a aaa,20:12:45,10,Ellie,um ok then ill tet it myself too lets seeee how long it gets hm i hope this waps cause i rly hate xamarin i hope i wont have to bother toom uch anymorei  just wanna build shit !!!,22:45:55";
+           var responseString = "0,Ellie,Hey there,00:01:50,1,Tony,Hi,00:02:32,2,Tony,Lorem ipsum,00:01:54,4,Ellie,dolor sit amet,00:03:9,5,Tony,consectetur adipiscing elit,00:07:06,6,Ellie,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,00:08:57,7,Tony, Ut enim ad minim veniam,16:20:03,8,Ellie,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,16:25:04,9,Tony,sunt in culpa qui officia deserunt mollit anim id est laborum.,20:12:45,10,Ellie,Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.,22:45:55";
 
-            
-
+           
             StackLayout line;
 
             Label time = new Label();
@@ -99,18 +101,7 @@ namespace chatty
                         FontFamily = "Solway-Light.ttf#Solway Light",
                         HorizontalTextAlignment = TextAlignment.Start
                     };
-                    /*
-                    message.FontSize = 16;
-                    message.Text = txt;
-                    message.FontFamily = "Solway-Light.ttf#Solway Light";
-                    message.HorizontalTextAlignment = TextAlignment.Start;
-                    */
-                    /*
-                    source = new Label();
-                    source.FontSize = 13;
-                    source.Text = tmp.name;
-                    source.TextColor = Color.FromHex("#656565");
-                    */
+                    
                     source = new Label()
                     {
                         FontSize = 13,
@@ -118,13 +109,6 @@ namespace chatty
                         TextColor = Color.FromHex("#656565")
                     };
 
-                    /*
-                    time = new Label();
-                    time.TextColor = Color.FromHex("#656565"); 
-                    time.FontSize = 11;
-                    time.FontFamily = "Solway-Light.ttf#Solway Light";
-                    time.Text = tmp.time;
-                    */
                     time = new Label()
                     {
                         TextColor = Color.FromHex("#656565"),
@@ -204,7 +188,7 @@ namespace chatty
             InitializeComponent();
             InitialRefresh();
             SB.HeightRequest = Application.Current.MainPage.Height-10;
-
+            SBHeight.Height = Application.Current.MainPage.Height - 150;
             /* ONLY A COMMENT TO DEBUG THE UI!
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {

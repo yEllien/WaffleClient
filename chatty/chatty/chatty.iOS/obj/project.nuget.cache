@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gnz8wwZNSZh2MZf31NKc5PuYFsSE9aoxEzQuiRpndJKub02s+ZIPx+kkk1wvaMQAF9z23jxXiSLzZeTAKR8odQ==",
+  "dgSpecHash": "hcQ05WSFyz1tIELviF3TPRoItO0d7SXG175Eb72Dak7wyxBp2j/6T78irzldR/hHkrHARYbPmayKCK5vyvj8tA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\neweffort\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
+  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\THISNOW\\WaffleClient\\chatty\\chatty\\chatty.iOS\\chatty.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elitt\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\elitt\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"

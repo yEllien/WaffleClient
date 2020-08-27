@@ -635,11 +635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\neweffort\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
+      "projectUniqueName": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\THISNOW\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
       "projectName": "chatty",
-      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\neweffort\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
+      "projectPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\THISNOW\\WaffleClient\\chatty\\chatty\\chatty\\chatty.csproj",
       "packagesPath": "C:\\Users\\elitt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\neweffort\\WaffleClient\\chatty\\chatty\\chatty\\obj\\",
+      "outputPath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\THISNOW\\WaffleClient\\chatty\\chatty\\chatty\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
