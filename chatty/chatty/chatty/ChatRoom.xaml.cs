@@ -47,10 +47,15 @@ namespace chatty
             return tmp;
         }
 
+        public void QuickScroll (object sender, EventArgs args)
+        {
+            SB.ScrollToAsync(0, SB.Content.Height, true);
+        }
+
         public async void Refresh() 
         {
-            if (SB.Content.Height != SB.Height) QuickScroll.IsVisible = true;
-            else QuickScroll.IsVisible = false;
+            if (SB.Content.Height != SB.Height) QuickScrollButton.IsVisible = true;
+            else QuickScrollButton.IsVisible = false;
 
             // i need the line below to get the proper string. for now ill make some fake messages so i can debug
             //var responseString = await client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/"+most_recent_id)); 
@@ -168,6 +173,7 @@ namespace chatty
         {
             SLV.Children.Clear();
             Refresh();
+            SB.ScrollToAsync(0, SB.Content.Height, true);
         }
 
         public async void HandleButtonClick(object Sender, EventArgs args)

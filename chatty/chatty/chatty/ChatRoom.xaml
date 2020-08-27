@@ -109,7 +109,7 @@
                 
             </ScrollView>
 
-            <ImageButton x:Name="QuickScroll"
+            <ImageButton x:Name="QuickScrollButton"
                 Source="quickscroll.png"
                 BackgroundColor="Transparent"
                 Grid.Column="32"
@@ -117,7 +117,7 @@
                 VerticalOptions="EndAndExpand"
                 Margin="20"
                 IsVisible="False"
-                />
+                Clicked="QuickScroll"/>
         </Grid>
        
      <!--<ScrollView x:Name="SB">
