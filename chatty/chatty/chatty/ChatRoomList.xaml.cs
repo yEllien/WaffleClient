@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,10 +47,92 @@ namespace chatty
 
         }
 
+        public void LoadChatRoom ()
+        {
+            ChatRoom chatRoom = new ChatRoom();
+            Application.Current.MainPage = chatRoom;
+        }
+
+        public void Test()
+        {
+            StackLayout chat = new StackLayout()
+            {
+                Orientation = StackOrientation.Horizontal,
+                Padding = 20
+            };
+            
+            TapGestureRecognizer TapRoom = new TapGestureRecognizer()
+            {
+                Command = new Command(() => LoadChatRoom())
+            };
+
+            Image StatusIcon = new Image()
+            {
+                Source = "active.png",
+                Scale = 0.15,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                Margin = -35
+            };
+
+            Label Name = new Label()
+            {
+                Text = "Tony",
+                //TextColor = Color.FromHex("#ffb940"),
+                TextColor = Color.White,
+                FontSize = 22,
+                FontFamily = "Solway-Light.ttf#Solway Light",
+                BackgroundColor = Color.Transparent,
+                HorizontalOptions = LayoutOptions.StartAndExpand,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            StackLayout preview = new StackLayout()
+            {
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.Center,
+            };
+
+            Label Time = new Label()
+            {
+                Text = "00:00:00",
+                TextColor = Color.LightGray,
+                FontSize = 8,
+                BackgroundColor = Color.Transparent,
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Center
+            };
+
+            Label MessagePreview = new Label()
+            {
+                Text = "Prev text",
+                TextColor = Color.LightGray,
+                FontSize = 10,
+                FontFamily = "Solway-Light.ttf#Solway Light",
+                BackgroundColor = Color.Transparent,
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            preview.Children.Add(Time);
+            preview.Children.Add(MessagePreview);
+
+            chat.Children.Add(StatusIcon);
+            chat.Children.Add(Name);
+            chat.Children.Add(preview);
+            
+            chat.GestureRecognizers.Add(TapRoom);
+
+            ChatsListLayout.Children.Add(chat);
+        }
+
         public ChatRoomList(string cert)
         {
             InitializeComponent();
-            LoadRooms(cert);
+            ChatsListScrollView.HeightRequest = Application.Current.MainPage.Height;
+            Test();
+            //LoadRooms(cert);
+            
         }
     }
 }

@@ -24,7 +24,7 @@ namespace chatty
 
         public void Login (object sender, EventArgs args)
         {
-            ChatRoom chatlist = new ChatRoom();
+            ChatRoomList chatlist = new ChatRoomList("a cert");
             Application.Current.MainPage = chatlist;
             /*
              

@@ -49,12 +49,12 @@ namespace chatty
 
         public void QuickScroll (object sender, EventArgs args)
         {
-            SB.ScrollToAsync(0, SB.Content.Height, true);
+            MessagesScrollView.ScrollToAsync(0, MessagesScrollView.Content.Height, true);
         }
 
         public async void Refresh() 
         {
-            if (SB.Content.Height != SB.Height) QuickScrollButton.IsVisible = true;
+            if (MessagesScrollView.Content.Height != MessagesScrollView.Height) QuickScrollButton.IsVisible = true;
             else QuickScrollButton.IsVisible = false;
 
             // i need the line below to get the proper string. for now ill make some fake messages so i can debug
@@ -164,7 +164,7 @@ namespace chatty
                 if (data.Count > 1)
                 {
                     most_recent_id = tmp.id;
-                    //await SB.ScrollToAsync(0, SLV.Y, false); ;                            idk
+                    //await MessagesScrollView.ScrollToAsync(0, SLV.Y, false); ;                            idk
                 }
             }
         }
@@ -173,7 +173,7 @@ namespace chatty
         {
             SLV.Children.Clear();
             Refresh();
-            SB.ScrollToAsync(0, SB.Content.Height, true);
+            MessagesScrollView.ScrollToAsync(0, MessagesScrollView.Content.Height, true);
         }
 
         public async void HandleButtonClick(object Sender, EventArgs args)
@@ -193,8 +193,8 @@ namespace chatty
         {
             InitializeComponent();
             InitialRefresh();
-            SB.HeightRequest = Application.Current.MainPage.Height-10;
-            SBHeight.Height = Application.Current.MainPage.Height - 150;
+            MessagesScrollView.HeightRequest = Application.Current.MainPage.Height-10;
+            MSVGridHeight.Height = Application.Current.MainPage.Height - 150;
             /* ONLY A COMMENT TO DEBUG THE UI!
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {

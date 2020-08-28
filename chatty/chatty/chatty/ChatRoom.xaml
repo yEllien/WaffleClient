@@ -95,10 +95,10 @@
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition x:Name="SBHeight"/>
+                <RowDefinition x:Name="MSVGridHeight"/>
             </Grid.RowDefinitions>
             
-            <ScrollView x:Name="SB"
+            <ScrollView x:Name="MessagesScrollView"
                 Grid.Column="0"
                 Grid.ColumnSpan="40"
                 Grid.Row="0"

@@ -30,8 +30,22 @@
                 Grid.ColumnSpan="4"
                 />
             </Grid>
-            
-            
+
+            <ScrollView x:Name="ChatsListScrollView">
+                <StackLayout x:Name="ChatsListLayout">
+                        
+                </StackLayout>
+            </ScrollView>
+
+            <Button
+                BackgroundColor="#ffb940"
+                Text="+"
+                FontSize="50"
+                FontFamily="Solway-Light.ttf#Solway Light"
+                Padding="0,-7,0,0"
+                />
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
