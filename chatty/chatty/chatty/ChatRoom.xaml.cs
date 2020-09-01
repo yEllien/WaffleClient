@@ -60,9 +60,10 @@ namespace chatty
             // i need the line below to get the proper string. for now ill make some fake messages so i can debug
             //var responseString = await client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/"+most_recent_id)); 
 
-           var responseString = "0,Ellie,Hey there,00:01:50,1,Tony,Hi,00:02:32,2,Tony,Lorem ipsum,00:01:54,4,Ellie,dolor sit amet,00:03:9,5,Tony,consectetur adipiscing elit,00:07:06,6,Ellie,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,00:08:57,7,Tony, Ut enim ad minim veniam,16:20:03,8,Ellie,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,16:25:04,9,Tony,sunt in culpa qui officia deserunt mollit anim id est laborum.,20:12:45,10,Ellie,Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.,22:45:55";
+            var responseString = "0,Ellie,Hey there,00:01:50,1,Tony,Hi,00:02:32,2,Tony,Lorem ipsum,00:01:54,4,Ellie,dolor sit amet,00:03:9,5,Tony,consectetur adipiscing elit,00:07:06,6,Ellie,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,00:08:57,7,Tony, Ut enim ad minim veniam,16:20:03,8,Ellie,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,16:25:04,9,Tony,sunt in culpa qui officia deserunt mollit anim id est laborum.,20:12:45,10,Ellie,Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.,22:45:55";
+            //var responseString = "0,Ellie,Hey there,00:01:50,1,Tony,Hi,00:02:32";
 
-           
+
             StackLayout line;
 
             Label time = new Label();
@@ -104,7 +105,8 @@ namespace chatty
                         FontSize = 16,
                         Text = txt,
                         FontFamily = "Solway-Light.ttf#Solway Light",
-                        HorizontalTextAlignment = TextAlignment.Start
+                        HorizontalTextAlignment = TextAlignment.Start,
+                        VerticalOptions = LayoutOptions.End
                     };
                     
                     source = new Label()
@@ -122,7 +124,11 @@ namespace chatty
                         Text = tmp.time
                     };
 
-                    line = new StackLayout() { Orientation = StackOrientation.Horizontal };
+                    line = new StackLayout() 
+                    { 
+                        Orientation = StackOrientation.Horizontal , 
+                        VerticalOptions = LayoutOptions.End
+                    };
                     
                     if (tmp.name == "Ellie")
                     {
@@ -193,8 +199,10 @@ namespace chatty
         {
             InitializeComponent();
             InitialRefresh();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#222222");
+            NavigationPage.SetHasBackButton(this, false);
             MessagesScrollView.HeightRequest = Application.Current.MainPage.Height-10;
-            MSVGridHeight.Height = Application.Current.MainPage.Height - 150;
+            MSVGridHeight.Height = Application.Current.MainPage.Height - 120;
             /* ONLY A COMMENT TO DEBUG THE UI!
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {

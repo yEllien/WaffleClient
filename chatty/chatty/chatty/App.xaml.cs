@@ -14,7 +14,6 @@ namespace chatty
             InitializeComponent();
 
             MainPage = new LoginPage();
-            NavigationPage navigation = new NavigationPage();
 
             string cert = ((LoginPage)MainPage).GetCertification();
            

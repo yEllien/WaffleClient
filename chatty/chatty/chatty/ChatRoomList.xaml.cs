@@ -50,10 +50,10 @@ namespace chatty
         public void LoadChatRoom ()
         {
             ChatRoom chatRoom = new ChatRoom();
-            Application.Current.MainPage = chatRoom;
+            Navigation.PushAsync(chatRoom);
         }
 
-        public void Test()
+        public void Test(string username, string lasttime, string lastmessage, string status)
         {
             StackLayout chat = new StackLayout()
             {
@@ -65,10 +65,10 @@ namespace chatty
             {
                 Command = new Command(() => LoadChatRoom())
             };
-
+            
             Image StatusIcon = new Image()
             {
-                Source = "active.png",
+                Source = status+".png",
                 Scale = 0.15,
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Center,
@@ -77,7 +77,7 @@ namespace chatty
 
             Label Name = new Label()
             {
-                Text = "Tony",
+                Text = username,
                 //TextColor = Color.FromHex("#ffb940"),
                 TextColor = Color.White,
                 FontSize = 22,
@@ -87,52 +87,76 @@ namespace chatty
                 VerticalOptions = LayoutOptions.Center
             };
 
+
+            /* I cant retrieve this info yet, to be added when such request exists
             StackLayout preview = new StackLayout()
             {
                 HorizontalOptions = LayoutOptions.End,
-                VerticalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
             };
-
+            
             Label Time = new Label()
             {
-                Text = "00:00:00",
+                Text = lasttime,
                 TextColor = Color.LightGray,
                 FontSize = 8,
                 BackgroundColor = Color.Transparent,
                 VerticalOptions = LayoutOptions.Start,
-                HorizontalOptions = LayoutOptions.Center
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.End
             };
 
             Label MessagePreview = new Label()
             {
-                Text = "Prev text",
+                Text = lastmessage,
                 TextColor = Color.LightGray,
                 FontSize = 10,
                 FontFamily = "Solway-Light.ttf#Solway Light",
                 BackgroundColor = Color.Transparent,
                 HorizontalOptions = LayoutOptions.End,
-                VerticalOptions = LayoutOptions.Center
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Start
+            };
+            */
+
+            BoxView Seperator = new BoxView()
+            {
+                HeightRequest = 1,
+                WidthRequest = Application.Current.MainPage.Width - 30,
+                HorizontalOptions = LayoutOptions.Center,
+                Color = Color.DimGray
             };
 
-            preview.Children.Add(Time);
-            preview.Children.Add(MessagePreview);
+            //preview.Children.Add(Time);
+            //preview.Children.Add(MessagePreview);
 
             chat.Children.Add(StatusIcon);
             chat.Children.Add(Name);
-            chat.Children.Add(preview);
+            //chat.Children.Add(preview);
             
             chat.GestureRecognizers.Add(TapRoom);
 
             ChatsListLayout.Children.Add(chat);
+            ChatsListLayout.Children.Add(Seperator);
+            
         }
 
         public ChatRoomList(string cert)
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             ChatsListScrollView.HeightRequest = Application.Current.MainPage.Height;
-            Test();
+            Test("Tony","00:00:20","Hi", "active");
+            Test("Kanivalaki", "16:23:54", "I'm an alien !", "inactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
+            Test("I died yesterday", "16:23:54", "I'm an alien !", "longinactive");
             //LoadRooms(cert);
-            
+
         }
     }
 }

@@ -42,7 +42,7 @@
                 Text="+"
                 FontSize="50"
                 FontFamily="Solway-Light.ttf#Solway Light"
-                Padding="0,-7,0,0"
+                Padding="0,-1,0,0"
                 />
 
 

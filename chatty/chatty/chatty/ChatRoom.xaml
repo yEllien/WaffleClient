@@ -7,8 +7,97 @@
              x:Class="chatty.ChatRoom"
              BackgroundColor="#343434">
 
+    <NavigationPage.TitleView>
+        
+        <Grid x:Name="TopBar">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <!--<BoxView 
+                Color="#222222"
+                HeightRequest="70"
+                WidthRequest="340"
+                Grid.ColumnSpan="60"
+                Grid.Row="0"
+                />
+            -->
+
+            <StackLayout x:Name="LeftSide"
+                Grid.Row="0" 
+                Grid.Column="0"
+                Grid.ColumnSpan ="40"
+                Orientation="Horizontal"
+                HorizontalOptions="Start"
+                VerticalOptions="Center">
+
+                <Label x:Name="Username"
+                    Text="Tony"
+                    FontSize="20"
+                    TextColor="White"
+                    FontFamily="Solway-Light.ttf#Solway Light"
+                    Padding="0,0,5,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"/>
+
+                <Image x:Name="Status"
+                    Source="longinactive.png"
+                    HeightRequest="16"
+                    Margin = "5,5,0,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+                <Label x:Name="LastSeen"
+                    Text="1d"
+                    TextColor="#bebebe"
+                    Padding="0,5,0,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"/>
+
+            </StackLayout>
+
+
+            <StackLayout x:Name="RightSide"
+                Grid.Row="0" 
+                Grid.Column="31"
+                Grid.ColumnSpan ="29"
+                Orientation="Horizontal"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Padding="15">
+
+                <ImageButton x:Name="Search"
+                    Source="search.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+
+                <ImageButton x:Name="Call"
+                    Source="call.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+
+                <ImageButton x:Name="Info"
+                    Source="info.png"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    HeightRequest="35"
+                    Padding="2"/>
+
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
+
     <StackLayout>
         
+        <!--
         <Grid x:Name="TopBar">
             
             <Grid.RowDefinitions>
@@ -92,6 +181,7 @@
 
             </StackLayout>
         </Grid>
+        -->
 
         <Grid>
             <Grid.RowDefinitions>
@@ -126,7 +216,7 @@
         
         <Grid 
             VerticalOptions="End" 
-            BackgroundColor="#22222"
+            BackgroundColor="#222222"
             Padding="10,0,0,5"
             HeightRequest="60">
 
@@ -134,10 +224,13 @@
                 Placeholder="Type your text here                               "
                 TextColor="LightGray"
                 PlaceholderColor="DimGray"
-                BackgroundColor="#22222"
+                BackgroundColor="#343434"
                 HorizontalOptions="StartAndExpand"
                 Grid.Column="0"
-                Grid.ColumnSpan="4"/>
+                Grid.ColumnSpan="4"
+                   HeightRequest="40"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0,1,0,1"/>
 
             <ImageButton  x:Name="Post"
                 Source="logoicon.png"
@@ -145,8 +238,10 @@
                 Pressed="PressedIcon"
                 Grid.Column="4"
                 Grid.ColumnSpan="1"
-                Padding="0,0,0,5"
-                BackgroundColor="Transparent"/>
+                Padding="0,2,0,1"
+                BackgroundColor="Transparent"
+                VerticalOptions="EndAndExpand"
+                         HeightRequest="50"/>
         </Grid>
     </StackLayout>
 

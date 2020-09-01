@@ -25,7 +25,7 @@ namespace chatty
         public void Login (object sender, EventArgs args)
         {
             ChatRoomList chatlist = new ChatRoomList("a cert");
-            Application.Current.MainPage = chatlist;
+            Application.Current.MainPage = new NavigationPage(chatlist);
             /*
              
             var cert = client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/Post/Login/" + Username.Text+"/"+Password.Text));
