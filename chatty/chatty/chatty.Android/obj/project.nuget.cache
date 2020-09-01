@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0+fzR8TH4zdEUro1cYdqy4kxBCFp5ijHUHi7IFvZua4Ta6UHngK5IyQMThbP0Pt8+KtDRW2M/H5UHXVBNoYsLg==",
+  "dgSpecHash": "0QpswmpDuUZOjh7ZesbtRs090h746i3hDyPx3dsKLyXGTHxRKswj5QtpwJr0qUq92ji5nW2g4JPy7nKm/bRnig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\wtf\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
+  "projectFilePath": "C:\\Users\\elitt\\Documents\\prog\\programming_projects\\Projects\\ver22\\WaffleClient\\chatty\\chatty\\chatty.Android\\chatty.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
