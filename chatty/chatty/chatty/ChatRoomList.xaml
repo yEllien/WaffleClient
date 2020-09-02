@@ -37,12 +37,13 @@
                 </StackLayout>
             </ScrollView>
 
-            <Button
+            <Button x:Name="AddButton"
                 BackgroundColor="#ffb940"
                 Text="+"
                 FontSize="50"
                 FontFamily="Solway-Light.ttf#Solway Light"
                 Padding="0,-1,0,0"
+                Clicked="FindUser"
                 />
 
 

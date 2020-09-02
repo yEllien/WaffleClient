@@ -174,3 +174,4 @@ C:\Users\elitt\Documents\prog\programming_projects\Projects\ver22\WaffleClient\c
 C:\Users\elitt\Documents\prog\programming_projects\Projects\ver22\WaffleClient\chatty\chatty\chatty\obj\Debug\netstandard2.0\chatty.dll
 C:\Users\elitt\Documents\prog\programming_projects\Projects\ver22\WaffleClient\chatty\chatty\chatty\obj\Debug\netstandard2.0\ref\chatty.dll
 C:\Users\elitt\Documents\prog\programming_projects\Projects\ver22\WaffleClient\chatty\chatty\chatty\obj\Debug\netstandard2.0\chatty.pdb
+C:\Users\elitt\Documents\prog\programming_projects\Projects\ver22\WaffleClient\chatty\chatty\chatty\obj\Debug\netstandard2.0\SearchPage.xaml.g.cs

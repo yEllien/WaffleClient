@@ -17,12 +17,27 @@ namespace chatty
 
 
         private static HttpClient client = new HttpClient();
-
+        /*
         public void LoadChatRoom(object sender, EventArgs args)
         {
             string room = (sender as Button).Text;
             client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/GetRooms/"));
         }
+        */
+
+        public void LoadChatRoom (object sender, EventArgs args)
+        {
+            ChatRoom chatRoom = new ChatRoom();
+            Navigation.PushAsync(chatRoom);
+        }
+
+        //overload temporary
+        public void LoadChatRoom()
+        {
+            ChatRoom chatRoom = new ChatRoom();
+            Navigation.PushAsync(chatRoom);
+        }
+
         public void LoadRooms (string cert)
         {
             var data = client.GetStringAsync(new Uri("http://192.168.2.3/chatservice/chat/GetRooms/" + cert));
@@ -47,10 +62,9 @@ namespace chatty
 
         }
 
-        public void LoadChatRoom ()
+        public void FindUser (object sender, EventArgs args)
         {
-            ChatRoom chatRoom = new ChatRoom();
-            Navigation.PushAsync(chatRoom);
+            Navigation.PushAsync(new SearchPage());
         }
 
         public void Test(string username, string lasttime, string lastmessage, string status)
@@ -133,7 +147,7 @@ namespace chatty
             chat.Children.Add(StatusIcon);
             chat.Children.Add(Name);
             //chat.Children.Add(preview);
-            
+
             chat.GestureRecognizers.Add(TapRoom);
 
             ChatsListLayout.Children.Add(chat);
